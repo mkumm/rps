@@ -12,6 +12,8 @@ defmodule RPS.Application do
       RPSWeb.Telemetry,
       # Start the Ecto repository
       RPS.Repo,
+      RPS.CommandedApplication,
+      RPS.Accounts.Supervisor,
       # Start the PubSub system
       {Phoenix.PubSub, name: RPS.PubSub},
       # Start Finch
